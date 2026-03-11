@@ -85,7 +85,7 @@ Deno.serve(async (req) => {
           plan: "free",
           generations: 0,
           monthly_limit: 5,
-          reset_date: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+          reset_date: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
         })
         .select()
         .single();
@@ -102,7 +102,7 @@ Deno.serve(async (req) => {
     // Auto-reset monthly counter if reset_date has passed
     const now = new Date();
     if (new Date(usageData.reset_date) <= now) {
-      const newReset = new Date(now.getTime() + 24 * 60 * 60 * 1000).toISOString();
+      const newReset = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000).toISOString();
       const { data: reset } = await supabase
         .from("user_usage")
         .update({ generations: 0, reset_date: newReset })
@@ -122,7 +122,7 @@ Deno.serve(async (req) => {
       return new Response(
         JSON.stringify({
           error: "LIMIT_REACHED",
-          message: "You have reached your daily limit of 5 generations. Come back tomorrow or upgrade your plan.",
+          message: "You have reached your monthly limit of 5 generations. Upgrade your plan to generate more apps.",
         }),
         { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
