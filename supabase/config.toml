@@ -1,0 +1,26 @@
+project_id = "xhflwpnysoofndhpgxqz"
+
+[functions.generate-app]
+verify_jwt = false
+
+[functions.download-app]
+verify_jwt = false
+
+[functions.get-user-plan]
+verify_jwt = false
+
+[functions.paddle-webhook]
+verify_jwt = false
+
+[functions.get-paddle-config]
+verify_jwt = false
+
+[functions.cancel-subscription]
+verify_jwt = false
+
+[functions.project-share]
+verify_jwt = false
+
+[functions.delete-account]
+verify_jwt = false
+
