@@ -195,7 +195,7 @@ export default function SubscriptionPage() {
                   </>
                 ) : plan === "starter" ? (
                   <>
-                    <PlanFeature>5 app generations per month</PlanFeature>
+                    <PlanFeature>10 app generations per month</PlanFeature>
                     <PlanFeature>Full source code download</PlanFeature>
                     <PlanFeature>Mobile QR install preview</PlanFeature>
                   </>
