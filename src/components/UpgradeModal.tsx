@@ -19,7 +19,7 @@ const PLANS = [
     price: "$19.99",
     period: "/mo",
     features: [
-      "5 app generations per month",
+      "10 app generations per month",
       "Advanced AI powered",
       "Full source code download",
       "Mobile QR install preview",
