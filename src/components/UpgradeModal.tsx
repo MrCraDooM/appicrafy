@@ -6,7 +6,6 @@ import { openPaddleCheckout } from "@/lib/paddle";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 
 interface UpgradeModalProps {
   open: boolean;
@@ -55,9 +54,7 @@ export function UpgradeModal({ open, onClose }: UpgradeModalProps) {
     }
     setLoading(planKey);
     try {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session?.access_token) throw new Error("Not authenticated");
-      await openPaddleCheckout(planKey, user.email, session.access_token);
+      await openPaddleCheckout(planKey, user.email);
     } catch (err: any) {
       toast.error(err.message ?? "Could not open checkout. Please try again.");
       setLoading(null);
