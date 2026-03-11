@@ -62,7 +62,7 @@ export default function Terms() {
             <PlanCard
               name="Starter"
               price="$19.99/mo"
-              items={["5 app generations per month", "AI powered", "Full source code download", "Mobile QR install preview"]}
+              items={["10 app generations per month", "AI powered", "Full source code download", "Mobile QR install preview"]}
             />
             <PlanCard
               name="Pro"
