@@ -144,7 +144,7 @@ export default function Builder() {
     const { allowed } = await checkAndResetIfNeeded();
     if (!allowed) {
       setShowUpgradeModal(true);
-      addMessage({ role: "assistant", content: "You've reached your daily limit of 5 generations. Come back tomorrow or upgrade your plan.", type: "error" });
+      addMessage({ role: "assistant", content: "You've reached your monthly limit of 5 generations. Upgrade your plan to generate more apps.", type: "error" });
       return;
     }
 
