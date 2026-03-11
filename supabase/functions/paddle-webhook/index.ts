@@ -8,7 +8,7 @@ const corsHeaders = {
 
 // Plan config
 const PLAN_CONFIG: Record<string, { plan: string; monthly_limit: number }> = {
-  starter: { plan: "starter", monthly_limit: 5 },
+  starter: { plan: "starter", monthly_limit: 10 },
   pro:     { plan: "pro",     monthly_limit: 999999 },
   free:    { plan: "free",    monthly_limit: 1 },
 };
