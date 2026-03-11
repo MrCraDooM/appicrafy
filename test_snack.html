@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container { display: flex; gap: 20px; }
+        iframe { width: 320px; height: 600px; border: 1px solid red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Test 1: Original parameter -->
+        <div>
+            <h3>Original</h3>
+            <iframe src="https://snack.expo.dev/embedded/@bacon/hello-world?iframeId=appicrafy&preview=true&platform=web&theme=dark&sdkVersion=50.0.0&deviceOnly=true"></iframe>
+        </div>
+        <!-- Test 2: hideComponents=editor -->
+        <div>
+            <h3>hideComponents=editor</h3>
+            <iframe src="https://snack.expo.dev/embedded/@bacon/hello-world?preview=true&platform=web&theme=dark&sdkVersion=50.0.0&hideComponents=editor"></iframe>
+        </div>
+        <!-- Test 3: hideComponents=editor,panel -->
+        <div>
+            <h3>hideComponents=editor,panel</h3>
+            <iframe src="https://snack.expo.dev/embedded/@bacon/hello-world?preview=true&platform=web&theme=dark&sdkVersion=50.0.0&hideComponents=editor,panel"></iframe>
+        </div>
+    </div>
+</body>
+</html>
