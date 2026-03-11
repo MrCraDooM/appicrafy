@@ -1,0 +1,9 @@
+{
+  "name": "AppicraFy",
+  "short_name": "AppicraFy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f11",
+  "theme_color": "#6C63FF",
+  "icons": [{ "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }]
+}
