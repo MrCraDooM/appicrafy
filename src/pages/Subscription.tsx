@@ -201,7 +201,7 @@ export default function SubscriptionPage() {
                   </>
                 ) : (
                   <>
-                    <PlanFeature>5 app generations per day</PlanFeature>
+                    <PlanFeature>5 app generations per month</PlanFeature>
                     <PlanFeature>Full source code download</PlanFeature>
                   </>
                 )}
