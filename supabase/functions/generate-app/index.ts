@@ -9,7 +9,7 @@ const corsHeaders = {
 // ─── Plan Config ──────────────────────────────────────────────────────────────
 const PLAN_LIMITS: Record<string, number> = {
   free:    5,
-  starter: 20,
+  starter: 10,
   pro:     Infinity,
 };
 
