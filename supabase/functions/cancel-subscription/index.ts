@@ -105,7 +105,7 @@ Deno.serve(async (req) => {
       .eq("id", subscription.id),
     adminClient
       .from("user_usage")
-      .update({ plan: "free", monthly_limit: 1 })
+      .update({ plan: "free", monthly_limit: 5 })
       .eq("user_id", userId),
     adminClient
       .from("user_plans")
