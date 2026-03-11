@@ -44,7 +44,7 @@ const PLANS = [
     name: "Free",
     price: "$0",
     period: "free forever",
-    features: ["5 generations / day", "Full source code download", "Zero lock-in"],
+    features: ["5 generations / month", "Full source code download", "Zero lock-in"],
     cta: "Get started free",
     highlight: false,
   },
