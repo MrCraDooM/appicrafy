@@ -30,8 +30,7 @@ export default function PaymentSuccess() {
           Subscription activated
         </h1>
         <p className="text-muted-foreground leading-relaxed mb-8">
-          Welcome to Pro! You now have unlimited app generations powered by
-          OpenAI. Start building right away.
+          Welcome to Pro! You now have unlimited app generations. Start building right away.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
