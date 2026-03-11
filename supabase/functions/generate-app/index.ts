@@ -45,8 +45,8 @@ Deno.serve(async (req) => {
 
     // ── Auto-fix mode (no usage charge) ──────────────────────────────────────
     if (fixMode && existingFiles && snackError) {
-      const isPaidPlan2 = (await supabase.from("user_usage").select("plan").eq("user_id", user.id).maybeSingle())
-        ?.data?.plan === "pro";
+      const fixPlan = (await supabase.from("user_usage").select("plan").eq("user_id", user.id).maybeSingle())?.data?.plan ?? "free";
+      const isPaidPlan2 = fixPlan === "starter" || fixPlan === "pro";
       const fixedFiles = isPaidPlan2
         ? await generateWithOpenAI(buildFixPrompt(existingFiles, snackError))
         : await generateWithGemini(buildFixPrompt(existingFiles, snackError));
