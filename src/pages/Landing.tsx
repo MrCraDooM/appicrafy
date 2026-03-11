@@ -53,7 +53,7 @@ const PLANS = [
     name: "Starter",
     price: "$19.99",
     period: "per month",
-    features: ["5 generations / month", "Full source code download", "Zero lock-in"],
+    features: ["10 generations / month", "Full source code download", "Zero lock-in"],
     cta: "Upgrade to Starter",
     highlight: false,
   },
