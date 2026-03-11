@@ -20,7 +20,7 @@ const PLANS = [
     period: "/mo",
     features: [
       "5 app generations per month",
-      "GPT-4o powered",
+      "Advanced AI powered",
       "Full source code download",
       "Mobile QR install preview",
     ],
@@ -33,7 +33,7 @@ const PLANS = [
     period: "/mo",
     features: [
       "Unlimited app generations",
-      "GPT-4o — most powerful AI",
+      "Most powerful AI engine",
       "Priority generation queue",
       "Full source code download",
       "Mobile QR install preview",
