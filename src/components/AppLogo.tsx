@@ -1,4 +1,4 @@
-import { Badge } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface AppLogoProps {
@@ -44,7 +44,7 @@ export function AppLogo({
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <div className={boxClass}>
-        <Badge className="" />
+        <Smartphone className={iconClass} />
       </div>
       {showLabel &&
       <span className={cn(textClass, labelClassName)}>AppicraFy</span>
